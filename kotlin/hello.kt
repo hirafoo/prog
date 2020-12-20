@@ -5,7 +5,8 @@
 fun main() {
     //hello()
     //st()
-    ar(1, "hoge")
+    //ar(1, "hoge")
+    high()
 }
 
 fun hello() {
@@ -33,4 +34,14 @@ fun ar(v1: Int, v2: String): Int {
     println("v1 " + v1)
     println("v2 " + v2)
     return 1
+}
+
+fun print(item: Int) {
+    println(item)
+}
+
+fun high() {
+    var ary = arrayOf(1,2,3,4)
+    ary.forEach(::print)
+    ary.forEach({num:Int -> println(num)})
 }
