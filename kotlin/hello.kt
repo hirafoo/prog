@@ -3,8 +3,9 @@
 
 //fun main(args:Array<String>) {
 fun main() {
-    hello()
-    st()
+    //hello()
+    //st()
+    ar(1, "hoge")
 }
 
 fun hello() {
@@ -26,4 +27,10 @@ fun st() {
 
     val st: String = a.toString()
     println("hoge " + st)
+}
+
+fun ar(v1: Int, v2: String): Int {
+    println("v1 " + v1)
+    println("v2 " + v2)
+    return 1
 }
